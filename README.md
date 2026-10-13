@@ -4,7 +4,6 @@ Teaching material for the module **"System modelling of the cold room"** in the 
 
 The Modelica package `AgriCoolSimple` models an off-grid cold room for agricultural produce: a PV-driven chiller charges an ice tank, and the ice cools the room through a fan coil. Students change design values in one record and compare scenarios.
 
-![Afternoon loading scenario](docs/Scenario_AfternoonLoading.png)
 
 ## What you can do with it
 
