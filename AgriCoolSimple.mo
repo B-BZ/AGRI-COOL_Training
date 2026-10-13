@@ -336,7 +336,7 @@ package AgriCoolSimple "AGRI-COOL training: off-grid cold room with PV chiller a
     der(EChiller) = chiller.P;
     annotation(
       experiment(StartTime = 0, StopTime = 259200, Interval = 120, Tolerance = 1e-06),
-      __OpenModelica_simulationFlags(s = "dassl", lv = "LOG_STATS"),
+      __OpenModelica_simulationFlags(s = "gbode", lv = "LOG_STATS"),
       Diagram(coordinateSystem(extent = {{-300, -240}, {300, 230}}), graphics = {
         Rectangle(extent = {{-295, 200}, {295, 85}}, lineColor = {205, 150, 60}, fillColor = {255, 250, 237}, fillPattern = FillPattern.Solid, lineThickness = 0.5, radius = 6),
         Rectangle(extent = {{-295, 80}, {-5, -215}}, lineColor = {65, 125, 185}, fillColor = {242, 248, 254}, fillPattern = FillPattern.Solid, lineThickness = 0.5, radius = 6),
@@ -369,7 +369,7 @@ package AgriCoolSimple "AGRI-COOL training: off-grid cold room with PV chiller a
       extends AgriCoolSimple.ColdRoomSystem(design(loadingHour = 7));
       annotation(
         experiment(StartTime = 0, StopTime = 259200, Interval = 120, Tolerance = 1e-06),
-        __OpenModelica_simulationFlags(s = "dassl", lv = "LOG_STATS"),
+        __OpenModelica_simulationFlags(s = "gbode", lv = "LOG_STATS"),
         Documentation(info = "<html><p>Crops arrive while the sun is up. The chiller handles most of the load.</p></html>"));
     end MorningLoading;
 
@@ -377,7 +377,7 @@ package AgriCoolSimple "AGRI-COOL training: off-grid cold room with PV chiller a
       extends AgriCoolSimple.ColdRoomSystem(design(loadingHour = 16));
       annotation(
         experiment(StartTime = 0, StopTime = 259200, Interval = 120, Tolerance = 1e-06),
-        __OpenModelica_simulationFlags(s = "dassl", lv = "LOG_STATS"),
+        __OpenModelica_simulationFlags(s = "gbode", lv = "LOG_STATS"),
         Documentation(info = "<html><p>Crops arrive near sunset. The ice tank handles most of the load.</p></html>"));
     end AfternoonLoading;
 
@@ -385,7 +385,7 @@ package AgriCoolSimple "AGRI-COOL training: off-grid cold room with PV chiller a
       extends AgriCoolSimple.ColdRoomSystem(design(loadingHour = 7, solarFactorCloudy = 0.25));
       annotation(
         experiment(StartTime = 0, StopTime = 259200, Interval = 120, Tolerance = 1e-06),
-        __OpenModelica_simulationFlags(s = "dassl", lv = "LOG_STATS"),
+        __OpenModelica_simulationFlags(s = "gbode", lv = "LOG_STATS"),
         Documentation(info = "<html><p>Day 2 has 25 % of the normal irradiance; days 1 and 3 are normal. Can the ice bridge the gap?</p></html>"));
     end CloudyDay2;
   end Scenarios;
