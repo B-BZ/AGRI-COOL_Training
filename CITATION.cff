@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+title: "AGRI-COOL Training: System modelling of a cold room"
+type: software
+authors:
+  - family-names: "Bakhsh Zahmatkesh"
+    given-names: "Bahareh"
+    affiliation: "University of Twente"
+    email: "bahareh.bakhshzahmatkesh@utwente.nl"
+version: "1.1.0"
+date-released: "2026-10-13"
+license: MIT
+repository-code: "https://github.com/B-BZ/AGRI-COOL_Training"
+keywords:
+  - Modelica
+  - OpenModelica
+  - cold storage
+  - ice thermal energy storage
+  - off-grid PV
+  - AGRI-COOL
